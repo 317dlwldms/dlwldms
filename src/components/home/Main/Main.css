@@ -1,0 +1,26 @@
+.Main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.Main h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #666;
+}
+.Main h1 {
+  font-size: 6rem;
+  color: #333;
+}
+.Main p {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  font-weight: 100;
+  padding-right: 4px;
+  border-right: 1px solid #222;
+  margin-bottom: 6rem;
+}
