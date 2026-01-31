@@ -1,0 +1,19 @@
+.DesignSection {
+  width: 100%;
+}
+.DesignSection .gallery {
+  display: flex;
+  width: auto;
+  margin-right: -1.5rem;
+}
+.DesignSection .gallery_column {
+  padding-right: 1.5rem;
+  background-clip: padding-box;
+}
+.DesignSection .design {
+  margin-bottom: 1.5rem;
+}
+.DesignSection img {
+  width: 100%;
+  border-radius: 0.25rem;
+}

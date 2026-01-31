@@ -9,12 +9,15 @@
 }
 .Main h3 {
   font-size: 2rem;
-  font-weight: 600;
-  color: #666;
+  font-weight: 800;
+  color: #555;
 }
 .Main h1 {
-  font-size: 6rem;
+  font-size: 7rem;
   color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .Main p {
   font-size: 1.75rem;
@@ -23,4 +26,13 @@
   padding-right: 4px;
   border-right: 1px solid #222;
   margin-bottom: 6rem;
+}
+
+@media (max-width: 1200px) {
+  .Main h3 {
+    font-size: 2vh;
+  }
+  .Main h1 {
+    font-size: 8vh;
+  }
 }

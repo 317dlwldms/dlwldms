@@ -1,0 +1,10 @@
+.Work {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+  gap: 2rem;
+}
+.Work h2 {
+  padding-bottom: 2rem;
+}

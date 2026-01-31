@@ -1,0 +1,20 @@
+.ProjectImgs {
+  width: 65%;
+  padding-top: 3.5rem;
+}
+.ProjectImgs .img_wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.ProjectImgs .img_wrapper div img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .ProjectImgs {
+    width: 100%;
+  }
+}

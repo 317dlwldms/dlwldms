@@ -1,0 +1,13 @@
+.Project {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 3rem;
+}
+
+@media (max-width: 1200px) {
+  .Project {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+}

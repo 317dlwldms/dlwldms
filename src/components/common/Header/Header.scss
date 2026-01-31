@@ -12,69 +12,39 @@
     display: flex;
     align-items: center;
     gap: 7rem;
-}
-
-.LogoTitle{
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-    .logo{
-        width: 20px;
-        height: 20px;
-        img{
-            width: 100%;
-        }
-    }
-    p{
-        font-weight: 700;
-        color: #333;
-    }
-}
-
-.Nav{
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    li{
+    z-index: 999;
+    .LogoTitle{
         display: flex;
+        gap: 6px;
+        justify-content: space-between;
         align-items: center;
-        gap: 3px;
+        width: 100%;
         cursor: pointer;
-        div{
-            width: 15px;
-            height: 15px;
-            svg{
+        .logo{
+            width: 20px;
+            height: 20px;
+            img{
                 width: 100%;
-                height: 100%;
-                path{
-                    stroke: #666;
-                    stroke-width: 1.5;
-                }
             }
         }
         p{
-            font-weight: 500;
-            font-size: 14px;
-            color: #666;
+            font-weight: 700;
+            color: #333;
         }
     }
-    li.on{
-        div{
-            svg{
-                path{
-                    stroke: #222;
-                }
-            }
-        }
-        p{
-            color: #222;
-        }
+    .Nav{
+        display: none;
     }
 }
+
+
 .Header.on {
     width:fit-content;
     .LogoTitle{
+        width: fit-content;
         justify-content: flex-start;
+    }
+    .Nav{
+        display: flex;
     }
 }

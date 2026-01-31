@@ -1,0 +1,25 @@
+.HorizontalScroll .container {
+  padding-left: 4rem;
+}
+.HorizontalScroll .wrapper {
+  gap: 8rem;
+}
+.HorizontalScroll .content_wrapper {
+  padding-top: 5rem;
+  width: calc(100vw - 8rem);
+}
+.HorizontalScroll .content_box img {
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .HorizontalScroll .container {
+    padding-left: 2rem;
+  }
+  .HorizontalScroll .wrapper {
+    gap: 4rem;
+  }
+  .HorizontalScroll .content_wrapper {
+    width: calc(100vw - 4rem);
+  }
+}

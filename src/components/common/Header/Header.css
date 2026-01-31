@@ -12,64 +12,38 @@
   display: flex;
   align-items: center;
   gap: 7rem;
+  z-index: 999;
 }
-
-.LogoTitle {
+.Header .LogoTitle {
   display: flex;
-  gap: 10px;
+  gap: 6px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  cursor: pointer;
 }
-.LogoTitle .logo {
+.Header .LogoTitle .logo {
   width: 20px;
   height: 20px;
 }
-.LogoTitle .logo img {
+.Header .LogoTitle .logo img {
   width: 100%;
 }
-.LogoTitle p {
+.Header .LogoTitle p {
   font-weight: 700;
   color: #333;
 }
-
-.Nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.Nav li {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  cursor: pointer;
-}
-.Nav li div {
-  width: 15px;
-  height: 15px;
-}
-.Nav li div svg {
-  width: 100%;
-  height: 100%;
-}
-.Nav li div svg path {
-  stroke: #666;
-  stroke-width: 1.5;
-}
-.Nav li p {
-  font-weight: 500;
-  font-size: 14px;
-  color: #666;
-}
-.Nav li.on div svg path {
-  stroke: #222;
-}
-.Nav li.on p {
-  color: #222;
+.Header .Nav {
+  display: none;
 }
 
 .Header.on {
   width: fit-content;
 }
 .Header.on .LogoTitle {
+  width: fit-content;
   justify-content: flex-start;
+}
+.Header.on .Nav {
+  display: flex;
 }
