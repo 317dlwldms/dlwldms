@@ -7,17 +7,18 @@
   align-items: center;
   gap: 1rem;
 }
-.Main h3 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #555;
-}
 .Main h1 {
   font-size: 7rem;
   color: #333;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.Main h3 {
+  font-size: 4.5rem;
+  font-weight: 100;
+  color: #333;
+  display: none;
 }
 .Main p {
   font-size: 1.75rem;

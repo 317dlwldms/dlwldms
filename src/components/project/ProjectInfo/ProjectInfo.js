@@ -1,13 +1,24 @@
+import { useState } from "react";
 import "./ProjectInfo.css";
 import plusIcon from "asset/icons/lucide/plus.svg";
 
 export default function ProjectInfo({project}){
+    const [isClicked, setIsClicked] = useState(false);
+    const handleClick = (e) => {
+        if(isClicked) {
+            e.preventDefault();
+            return;
+        }
+        setTimeout(()=>{
+            setIsClicked(false);
+        }, 1000);
+    }
     const InfoRow = ({label, value}) => {
         if(!value || value.length === 0) return null;
         return(
             <div className="url">
                 <h4>{label}</h4>
-                <p>{value}</p>
+                <a href={value.url} target="_blank" rel="noreferrer" onClick={handleClick} className={isClicked ? "is-clicked" : ""}>{value.text}</a>
             </div>
         )
     }
@@ -20,16 +31,10 @@ export default function ProjectInfo({project}){
                 <h1 className="font_Serenity">{project.title}</h1>
                 <div className="sub">
                     <p className="overview">{project.overview}</p>
-                    <ul>
-                        {Array.isArray(project.keyFeatures) &&
-                            project.keyFeatures.map((kF,i) =>(
-                                <li key={i} className="kF">
-                                    <p className="label">{kF.label}</p>
-                                    <p>{kF.text}</p>
-                                </li>
-                            ))
-                        }
-                    </ul>
+                    <div className="keyFeatures">
+                        <p className="kF">{project.keyFeatures.label}</p>
+                        {project.keyFeatures.text}
+                    </div>
                 </div>
                 <div className="slidebox_wrapper" onClick={(e) => e.currentTarget.classList.toggle("on")}>
                     <div className="slidebox_title">

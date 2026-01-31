@@ -2,6 +2,10 @@
   align-items: center;
   gap: 24px;
 }
+.Nav .menuSvg {
+  width: 16px;
+  height: 16px;
+}
 .Nav li {
   display: flex;
   align-items: center;

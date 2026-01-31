@@ -2,22 +2,12 @@ import "./Header.css";
 import Logo from "asset/icons/favicon.svg";
 import Nav from "./Nav/Nav";
 import { useEffect, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Header(){
     const [isOn, setIsOn] = useState(false);
     const headerRef = useRef(null);
 
-    const location = useLocation();
-    const navigate = useNavigate();
-
-    const isProjectPage = location.pathname.startsWith("/project");
-
-    useEffect(() => {
-        if(isProjectPage){
-            setIsOn(false);
-        }
-    },[isProjectPage]);
 
     useEffect( ()=> {
         const handleClickOutside = (e) => {
@@ -39,14 +29,10 @@ export default function Header(){
 
 
     const onClickHeader = () => {
-        if(isProjectPage){
-            navigate("/");
-            return;
-        };
-        setIsOn(prev => !prev)
-    }
+        setIsOn(true)
+    };
     return(
-        <div ref={headerRef} className={`Header ${isOn ? "on" : ""} ${isProjectPage ? "project" : ""}`} onClick={onClickHeader}>
+        <div ref={headerRef} className={`Header ${isOn ? "on" : ""}`} onClick={onClickHeader}>
             <div className="LogoTitle">
                 <Link to={"/"}>
                     <div className="logo">
@@ -55,7 +41,7 @@ export default function Header(){
                 </Link>
                 <p>dlwldms</p>
             </div>
-            <Nav />
+            <Nav setIsOn={setIsOn} />
         </div>
     )
 }
