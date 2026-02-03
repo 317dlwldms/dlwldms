@@ -7,7 +7,7 @@ import ScrollToTop from 'components/common/ScrollToTop';
 
 function App() {
   return (
-    <BrowserRouter basename="/dlwldms">
+    <BrowserRouter basename="/">
 
     <div className="App">
       <ScrollToTop />

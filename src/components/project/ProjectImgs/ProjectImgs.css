@@ -1,20 +1,69 @@
 .ProjectImgs {
-  width: 65%;
+  width: 60%;
   padding-top: 3.5rem;
 }
-.ProjectImgs .img_wrapper {
+.ProjectImgs .img_wrapper a {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  cursor: pointer;
 }
-.ProjectImgs .img_wrapper div img {
+.ProjectImgs .img_wrapper a div img {
   width: 100%;
   border-radius: 1rem;
+}
+.ProjectImgs .img_wrapper a .img_png {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #fafafa;
+  border-radius: 1rem;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+.ProjectImgs .img_wrapper a .img_png img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: cover;
+}
+.ProjectImgs .img_wrapper a .click_text {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 2rem;
+  justify-content: center;
+  gap: 0.25rem;
+  animation: move 3s ease-in-out infinite;
+}
+.ProjectImgs .img_wrapper a .click_text .click_svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProjectImgs .img_wrapper a .click_text .click_svg svg path {
+  stroke: #898989;
+}
+.ProjectImgs .img_wrapper a .click_text p {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #898989;
 }
 
 @media (max-width: 1200px) {
   .ProjectImgs {
     width: 100%;
+  }
+  .ProjectImgs .img_wrapper a {
+    gap: 2rem;
+  }
+}
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
   }
 }

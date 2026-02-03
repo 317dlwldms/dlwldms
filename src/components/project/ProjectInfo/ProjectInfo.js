@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ProjectInfo.css";
 import plusIcon from "asset/icons/lucide/plus.svg";
+import ProjectHeader from "components/common/ProjectHeader/ProjectHeader";
 
 export default function ProjectInfo({project}){
     const [isClicked, setIsClicked] = useState(false);
@@ -13,6 +14,7 @@ export default function ProjectInfo({project}){
             setIsClicked(false);
         }, 1000);
     }
+    //data에 저장된 항목 중 비어있는 항목은 출력되지않게
     const InfoRow = ({label, value}) => {
         if(!value || value.length === 0) return null;
         return(
@@ -25,9 +27,8 @@ export default function ProjectInfo({project}){
 
     return(
         <div className="ProjectInfo">
-            
+            <ProjectHeader />
             <div className="info_wrapper">
-
                 <h1 className="font_Serenity">{project.title}</h1>
                 <div className="sub">
                     <p className="overview">{project.overview}</p>

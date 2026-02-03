@@ -9,14 +9,14 @@ export default function Footer(){
             <ul className="footer_url">
                 <li>
                     <h4>Github</h4>
-                    <p><a href="https://github.com/317dlwldms" target="_blank" rel="noreferrer">github.317dlwldms.com</a></p>
+                    <p><a href="https://github.com/317dlwldms" target="_blank" rel="noopener noreferrer">github.317dlwldms.com</a></p>
                 </li>
                 <li>
                     <h4>E-Mail</h4>
                     <p>_dlwldms@kakao.com</p>
                 </li>
                 <li>
-                    <h4>Kakao Id</h4>
+                    <h4>Kakao ID</h4>
                     <p>_dlwldms</p>
                 </li>
                 <li>
@@ -26,10 +26,10 @@ export default function Footer(){
             </ul>
             <div className="footer_nav">
                 <ul>
-                    <li><a href="./"><h4 >Home</h4></a></li>
+                    <li><a href="/"><h4 >Home</h4></a></li>
                     <li className="nav_projectList">
                         {projectList.map((project, i)=>(
-                            <Link to={`/project/${project.slug}`} target="_blank" key={i}>
+                            <Link to={`/project/${project.slug}`} target="_blank" rel="noopener noreferrer" key={i}>
                                 <h4>
                                     {project.title}
                                 </h4>

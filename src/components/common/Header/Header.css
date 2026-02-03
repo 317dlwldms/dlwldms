@@ -1,9 +1,13 @@
 .Header {
   position: fixed;
-  padding: 3rem;
+  padding: 3rem 2rem;
   z-index: 999;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
   gap: 0.5rem;
 }
 .Header .logo_wrap {
@@ -34,10 +38,10 @@
 }
 @media (max-width: 700px) {
   .Header .logo_wrap img {
-    width: 18px;
+    width: 20px;
   }
   .Header .logo_wrap h1 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
   .Header ul {
     display: none;
