@@ -1,45 +1,42 @@
 .AboutMain {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 5rem;
 }
 .AboutMain h3 {
-  width: 100%;
-  text-align: center;
-  font-size: 4.5rem;
-}
-.AboutMain div {
-  max-width: 450px;
-  width: 95%;
+  font-size: 4rem;
   display: flex;
-  flex-direction: column;
-  padding-right: 1rem;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 4rem 0;
 }
-.AboutMain div p {
-  font-size: 1.5rem;
-  color: #444;
+.AboutMain .about_textbox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem;
+}
+.AboutMain .about_textbox p {
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.75rem;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 125%;
 }
-.AboutMain div p span {
+.AboutMain .about_textbox p span {
   color: #ACCFF0;
 }
 
 @media (max-width: 1200px) {
+  .AboutMain .about_textbox {
+    padding: 3rem 0rem;
+  }
+}
+@media (max-width: 700px) {
   .AboutMain h3 {
-    display: flex;
-    flex-direction: column;
-    font-size: 5vh;
+    font-size: 2.75rem;
   }
-  .AboutMain div {
-    max-width: 480px;
-    width: 100%;
-    padding: 0;
-  }
-  .AboutMain div p {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .AboutMain .about_textbox p {
+    font-size: 1.5rem;
   }
 }

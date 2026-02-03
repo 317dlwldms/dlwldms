@@ -11,8 +11,8 @@ export default function ProjectHeader(){
                 <h1>dlwldms</h1>
             </Link>
             <ul>
-                {projectList.map(project=>(
-                    <li key={project.slug}>
+                {projectList.map((project, i)=>(
+                    <li key={i}>
                         <Link to={`/project/${project.slug}`}>
                             {project.title}
                         </Link>

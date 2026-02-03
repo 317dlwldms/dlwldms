@@ -1,0 +1,73 @@
+.ProjectNav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-direction: column;
+}
+.ProjectNav ul {
+  height: 61px;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 8px;
+  background: #f5f5f5;
+  backdrop-filter: blur(6px);
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  z-index: 2;
+}
+.ProjectNav li {
+  transition: all 0.3s ease;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.ProjectNav li img {
+  border-radius: 0.5rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+}
+.ProjectNav .title {
+  position: absolute;
+  top: 0rem;
+  opacity: 0;
+  padding: 0.25rem 0.5rem;
+  justify-content: center;
+  background: #e5e5e5;
+  border-radius: 4px;
+  display: flex;
+  visibility: hidden;
+  z-index: -1;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.ProjectNav li.on {
+  width: 65px;
+  height: 65px;
+  margin: 0 3px;
+}
+.ProjectNav li.on .title {
+  top: -2.75rem;
+  opacity: 1;
+  visibility: visible;
+}
+.ProjectNav li.on:first-child {
+  margin-left: 0px;
+}
+.ProjectNav li.on:last-child {
+  margin-right: 0px;
+}
+.ProjectNav p {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.ProjectNav.on {
+  height: 61px;
+}

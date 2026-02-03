@@ -5,7 +5,9 @@ export default function ProjectImgs({ project }){
     return(
         <div className="ProjectImgs">
             <div className="img_wrapper">
-                
+                <div>
+                    <img alt={project.title} src={project.homeImg} loading="lazy"/>
+                </div>
                 {Array.isArray(project.imgs) &&
                     project.imgs.map((src,i)=>(
                         <motion.div
@@ -15,7 +17,7 @@ export default function ProjectImgs({ project }){
                             viewport={{once: true, margin: "-100px"}}
                             transition={{duration: 0.6}}
                         >
-                            <img alt={project.title} src={src}/>
+                            <img alt={project.title} src={src} loading="lazy"/>
                         </motion.div>
                     ))
                 }

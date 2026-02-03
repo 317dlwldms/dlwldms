@@ -36,8 +36,8 @@ export default function ProjectInfo({project}){
                         {project.keyFeatures.text}
                     </div>
                 </div>
-                <div className="slidebox_wrapper" onClick={(e) => e.currentTarget.classList.toggle("on")}>
-                    <div className="slidebox_title">
+                <div className="slidebox_wrapper">
+                    <div className="slidebox_title" onClick={(e) => e.currentTarget.parentElement.classList.toggle("on")}>
                         <h3>Info</h3>
                         <div className="svg">
                             <img alt="plus" src={plusIcon} />
@@ -49,19 +49,18 @@ export default function ProjectInfo({project}){
                         <InfoRow label="Figma" value={project.figma}/>
                         <InfoRow label="Notion" value={project.notion}/>
                         <div className="skill_tool">
-                            <h4>Stack</h4>
-                            <ul>
-                                {Array.isArray(project.stack) &&
-                                    project.stack.map((text,i)=>(
-                                        <li key={i}>{text}</li>
-                                    ))
-                                }
-                            </ul>
+                        <ul>
+                            {Array.isArray(project.stack) &&
+                                project.stack.map((text,i)=>(
+                                    <li key={i}>{text}</li>
+                                ))
+                            }
+                        </ul>
                         </div>
                     </div>
                 </div>
-                <div className="slidebox_wrapper" onClick={(e) => e.currentTarget.classList.toggle("on")}>
-                    <div className="slidebox_title">
+                <div className="slidebox_wrapper">
+                    <div className="slidebox_title" onClick={(e) => e.currentTarget.parentElement.classList.toggle("on")}>
                         <h3>Next Steps</h3>
                         <div className="svg">
                             <img alt="plus" src={plusIcon} />

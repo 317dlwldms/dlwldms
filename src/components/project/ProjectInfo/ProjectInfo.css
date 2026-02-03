@@ -45,12 +45,20 @@
 .ProjectInfo .sub .keyFeatures p {
   line-height: 1.125rem;
 }
+.ProjectInfo .sub .keyFeatures > .kF_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.ProjectInfo .sub .keyFeatures > .kF_text p {
+  display: flex;
+  gap: 0.25rem;
+}
 .ProjectInfo .sub .kF span {
   font-weight: 400;
 }
 .ProjectInfo .slidebox_wrapper {
   border-bottom: 1px solid #bbb;
-  cursor: pointer;
 }
 .ProjectInfo .slidebox_wrapper.on .slidebox {
   display: flex;
@@ -63,6 +71,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  cursor: pointer;
 }
 .ProjectInfo .slidebox_title h3 {
   font-size: 1rem;
@@ -73,7 +82,7 @@
 }
 .ProjectInfo .slidebox {
   display: none;
-  color: #666;
+  color: #565b62;
   font-size: 0.875rem;
   flex-direction: column;
   gap: 0.75rem;
@@ -90,17 +99,17 @@
   font-weight: 500;
 }
 .ProjectInfo .slidebox ul {
+  padding-top: 0.5rem;
   flex: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 .ProjectInfo .slidebox ul li {
-  padding: 2px 8px;
-  background: #444;
-  border-radius: 100px;
-  font-weight: 600;
-  color: #fff;
+  padding: 2px 6px;
+  background: #f5f5f5;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
   font-size: 0.75rem;
 }
 .ProjectInfo .slidebox .nextSteps {

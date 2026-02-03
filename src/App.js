@@ -1,13 +1,14 @@
 import './App.css';
-import Header from 'components/common/Header/Header';
 import Footer from 'components/common/Footer/Footer';
 import Home from 'pages/Home/Home';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Project from 'pages/Project/Project';
 import ScrollToTop from 'components/common/ScrollToTop';
 
 function App() {
   return (
+    <BrowserRouter basename="/dlwldms">
+
     <div className="App">
       <ScrollToTop />
       <Routes>
@@ -16,6 +17,7 @@ function App() {
       </Routes>
       <Footer />
     </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,12 +1,11 @@
 
 import "./Work.css";
-import DesignSection from "./DesignSection/DesignSection";
 import ProjectSection from "./ProjectSection/ProjectSection";
 export default function Work(){
     return(
-        <div className="Work">
+        <div className="Work section" id="project">
+            <h2>Project</h2>
             <ProjectSection />
-            <DesignSection />
         </div>
     )
 }
