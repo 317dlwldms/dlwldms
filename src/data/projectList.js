@@ -24,7 +24,7 @@ export const projectList = [
         keyFeatures: { label : "React Router [useParms] · 데이터 바인딩", text: <div className="kF_text"><p><span>·</span>사용자가 특정 이미지를 클릭하면 해당 데이터와 연결된 정보를 실시간으로 불러와 화면에 렌더링합니다.</p><p><span>·</span>매달 추가되는 잡지 데이터를 일관된 포맷으로 유지할 수 있으며, 수정 및 유지보수에 용이합니다.</p></div>},
         github: {url: "https://github.com/317dlwldms/MCA", text: "github.com/317dlwldms/MCA"},
         figma: {url: "https://www.figma.com/design/9Qk0zU4IAKvTTfC2UUcdOV/%EC%9B%94%EA%B0%84%EB%8F%84%EC%98%88?node-id=14-557&m=dev&t=W8O3k3VVjfSQYzEC-1", text: "figma.com/MCA"},
-        notion: "",
+        notion: {url: "https://obtainable-shallot-6b9.notion.site/MCA-2fda8ff395ee818eba63debda59fbe11", text: "notion.site/mca"},
         stack: [
             "React","HTML5","CSS3", "JavaScript","Figma","Photoshop"
         ],
@@ -45,7 +45,7 @@ export const projectList = [
         keyFeatures: { label : "Geolocation API · Weather API · Spotify API", text: <div className="kF_text"><p><span>·</span>사용자의 위치에 따라 현재 날씨를 가져오고, 권한이 없는 경우에도 서비스가 동작하도록 예외 처리를 두어 구현하였습니다.</p><p><span>·</span>위치와 날씨를 반영하여 상황에 맞는 플레이리스트를 추천합니다.</p></div>},
         github: {url: "https://github.com/317dlwldms/tik-tok", text: "github.com/317dlwldms.tik-tok"},
         figma: {url: "https://www.figma.com/design/puTo3ssrgm6QfRybHKslne/Tik-Tok?m=auto&t=IW5x4MNs16IghdQd-6", text: "figma.com/tik-tok"},
-        notion: "",
+        notion: {url: "https://obtainable-shallot-6b9.notion.site/Tik-Tok-2fda8ff395ee81009823e55812a047bc", text: "notion.site/tik-tok"},
         stack: [
             "REST API","JavaScript","HTML5","CSS3","Figma","Photoshop", "Illustrator"
         ],
@@ -82,14 +82,14 @@ export const projectList = [
         slug: "akmu-album-page",
         logo: logo3,
         overview: "아티스트 앨범을 소개하는 웹페이지",
-        keyFeatures: { label : "Horizontal Scroll", text: <div className="kF_text"><p><span>·</span>jQuery의 mousewheel 이벤트를 제어하여 사용자가 휠 위 아래로 굴릴 때 그 스크롤 된 만큼을 화면의 좌우로 이동하도록 구현하였습니다.</p></div>},
+        keyFeatures: { label : "Horizontal Scroll", text: <div className="kF_text"><p><span>·</span>jQuery의 mousewheel 이벤트를 제어하여 사용자가 스크롤 할 때 한 섹션씩 자연스럽게 전환되도록 구현하였습니다.</p></div>},
         github: {url: "https://github.com/317dlwldms/album",text: "github.com/dlwldms/album"},
-        notion: "",
+        notion: {url: "https://obtainable-shallot-6b9.notion.site/Album-2fda8ff395ee814d9396c81d74386abc", text: "notion.site/album"},
         figma: "",
         stack: [
             "HTML5","CSS3","j-Query","Photoshop", "Illustrator"
         ],
-        nextSteps: "웹 개발을 처음 배울 때 만든 프로젝트, 고칠 점은 많지만 더 나아지는 과정을 보여주기 위해 비슷한 주제로 프로젝트를 제작해 Before/After 를 확실히 보여주도록 할것",
+        nextSteps: "웹 개발을 처음 배울 때 제작한 프로젝트로, width를 1500px로 고정해 작은 화면에서는 콘텐츠가 잘려보였다. 이 경험을 통해 반응형 레이아웃의 중요성을 생각하게 되었다.",
         url: "https://dlwldms.com/album",
         imgs: [
             img3_0,
