@@ -46,7 +46,7 @@ export default function ProjectInfo({project}){
                     </div>
                     <div className="slidebox">
                         
-                        <InfoRow label="Github" value={project.github}/>
+                        <InfoRow label="GitHub" value={project.github}/>
                         <InfoRow label="Figma" value={project.figma}/>
                         <InfoRow label="Notion" value={project.notion}/>
                         <div className="skill_tool">

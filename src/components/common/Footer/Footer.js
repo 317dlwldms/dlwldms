@@ -1,28 +1,24 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import { projectList } from "data/projectList";
+import { urlList } from "data/urlList";
 
 export default function Footer(){
     return(
         <div className="Footer">
             <h2 className="font_Serenity">www.dlwldms.com</h2>
             <ul className="footer_url">
+                {urlList.map(list => (
+                    <li>
+                        <h4>{list.title}</h4>
+                        <p><a href={list.url} target="_blank" rel="noopener noreferrer">{list.text}</a></p>
+                    </li>
+                ))}
                 <li>
-                    <h4>Github</h4>
-                    <p><a href="https://github.com/317dlwldms" target="_blank" rel="noopener noreferrer">github.317dlwldms.com</a></p>
+                    <h4>GitHub</h4>
+                    <p><a href="https://github.com/317dlwldms" target="_blank" rel="noopener noreferrer">317dlwldms</a></p>
                 </li>
-                <li>
-                    <h4>E-Mail</h4>
-                    <p>_dlwldms@kakao.com</p>
-                </li>
-                <li>
-                    <h4>Kakao ID</h4>
-                    <p>_dlwldms</p>
-                </li>
-                <li>
-                    <h4>Tel.</h4>
-                    <p>010-4583-8375</p>
-                </li>
+
             </ul>
             <div className="footer_nav">
                 <ul>

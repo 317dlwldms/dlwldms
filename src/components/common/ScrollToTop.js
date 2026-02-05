@@ -13,3 +13,5 @@ export default function ScrollToTop(){
     }, [pathname]);
     return null;
 }
+
+//페이지 클릭하면 페이지 맨 위로 이동

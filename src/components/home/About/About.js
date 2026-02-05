@@ -26,7 +26,7 @@ export default function About(){
                     ease: "easeOut"
                 }}
             >
-                <p><span>CERAMIC ART(1)</span>도예를 전공하며 조형적 예술에 대한 기초와 감각을 익혔습니다. <span>GRAPHIC DESIGN(2)</span> 전공 수업을 통해 평면 디자인의 원리를 깨닫고 디지털 그래픽을 시작했습니다. <span>WEB DESIGN(3)</span> 졸업 후 웹 디자인 시스템을 학습하며 사용자 중심의 인터페이스를 설계했습니다. <span>WEB PUBLISHING(4)</span> 디자인을 직접 구현하고자 HTML/CSS를 익히며 웹 표준을 학습했습니다. <span>INTERACTIVE CODING(5)</span> 현재는 모든 기기에 최적화된 반응형 웹과 생동감 있는 인터랙션을 구현합니다.</p>
+                <p>도예를 전공하며 <span>CERAMIC ART(1)</span> 조형예술의 기초와 감각을 쌓았습니다. 전공 수업 중 디지털 그래픽 디자인을 <span>GRAPHIC DESIGN(2)</span> 통해 평면 디자인을 접하게 되었고, 졸업 후 미술 학원과 교육 과정을 거치며 상업 디자인을 보다 깊이 이해하게 되었습니다. 웹 디자인을 <span>WEB DESIGN(3)</span> 접하며 사용자 중심의 인터페이스를 고민하게 되었고, 디자인한 작업물을 직접 구현하고자 HTML, CSS를 익히며 웹 구조와 표준을 고려한 웹 퍼블리싱<span>WEB PUBLISHING(4)</span>에 더 큰 흥미를 느꼈습니다. 현재는 더 나아가 모든 기기에 최적화된 반응형 웹과 생동감 있는 인터렉션을 구현하고 <span>INTERACTIVE CODING(5)</span> 있습니다.</p>
             </motion.div>
             <ProjectNav />
         </div>

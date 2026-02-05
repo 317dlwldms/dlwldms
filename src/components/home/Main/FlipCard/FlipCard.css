@@ -1,0 +1,151 @@
+.FlipCard {
+  perspective: 1000px;
+  cursor: pointer;
+  padding-bottom: 5rem;
+}
+
+.card {
+  width: 600px;
+  height: 370px;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #fff;
+  backdrop-filter: hidden;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem 3rem;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.front .front_top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.front .front_top > div {
+  display: flex;
+  justify-content: space-between;
+}
+.front .front_top > div img {
+  width: 25px;
+}
+.front .front_top > div p {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.front .front_top > img {
+  width: 100%;
+}
+.front .front_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+  margin-left: 30%;
+}
+.front .front_bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.front .front_bottom ul li {
+  width: 50%;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+.front .front_bottom ul li .title {
+  text-decoration: underline;
+  padding-bottom: 0.125rem;
+}
+.front .front_bottom ul li .text {
+  font-weight: 600;
+}
+.front .front_bottom > p {
+  padding: 0.25rem 0.75rem;
+  border-left: 3px solid #0c1219;
+  font-weight: 600;
+}
+
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back > div {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.back > div p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 100px;
+  text-align: right;
+}
+.back > div .arrow {
+  display: flex;
+}
+.back > div img {
+  width: 100px;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 1200px) {
+  .FlipCard {
+    padding: 0;
+  }
+  .FlipCard .card {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 1/1.6;
+  }
+  .FlipCard .card .card-face {
+    padding: 3rem 1.5rem;
+  }
+  .FlipCard .front .front_top > div img {
+    width: 20px;
+    height: 20px;
+  }
+  .FlipCard .front .front_top > div p {
+    font-size: 1rem;
+  }
+  .FlipCard .front .front_bottom {
+    width: 100%;
+    margin: 0;
+    gap: 1.5rem;
+  }
+  .FlipCard .front .front_bottom ul li {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .FlipCard .front .front_bottom > p {
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+  .FlipCard .back > div {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .FlipCard .back > div p {
+    text-align: center;
+  }
+  .FlipCard .back > div .arrow {
+    transform: rotate(90deg);
+  }
+}
