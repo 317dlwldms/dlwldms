@@ -13,39 +13,17 @@ import homeImg0 from "asset/images/project/0_imghome.png";
 import homeImg1 from "asset/images/project/1_imghome.png";
 import homeImg2 from "asset/images/project/2_imghome.png";
 import homeImg3 from "asset/images/project/3_imghome.png";
-import homeImg4 from "asset/images/project/4_imghome.png";
 
 export const projectList = [
-    {
-        id: "3",
-        title: "dlwldms",
-        slug: "dlwldms",
-        logo: logo0,
-        overview: "MCA 월간도예 매거진 홈페이지 리디자인",
-        keyFeatures: { label : "React Router [useParms] · 데이터 바인딩", text: <div className="kF_text"><p><span>·</span>사용자가 특정 이미지를 클릭하면 해당 데이터와 연결된 정보를 실시간으로 불러와 화면에 렌더링합니다.</p><p><span>·</span>매달 추가되는 잡지 데이터를 일관된 포맷으로 유지할 수 있으며, 수정 및 유지보수에 용이합니다.</p></div>},
-        github: {url: "https://github.com/317dlwldms/dlwldms", text: "317dlwldms/dlwldms"},
-        notion: {url: "https://obtainable-shallot-6b9.notion.site/dlwldms-2fda8ff395ee81658414fb0920c2bb1e", text: "[👩🏻‍💻 dlwldms]"},
-        figma: "",
-        stack: [
-            "React","SCSS", "Framer Motion", "Router","HTML5","CSS3", "JavaScript","Figma","Photoshop"
-        ],
-        nextSteps: "뉴스, 정보소식 페이지에서 각 요소마다 주제를 분석해 더 세분화해서 볼 수 있는 구성을 설계",
-        url: "https://dlwldms.com",
-        imgs: [
-            img0_0,
-            img0_1
-        ],
-        homeImg: homeImg4,
-    },
     {
         id: "2",
         title: "MCA",
         slug: "mca-ceramic-art",
         logo: logo0,
         overview: "MCA 월간도예 매거진 홈페이지 리디자인",
-        keyFeatures: { label : "React Router [useParms] · 데이터 바인딩", text: <div className="kF_text"><p><span>·</span>사용자가 특정 이미지를 클릭하면 해당 데이터와 연결된 정보를 실시간으로 불러와 화면에 렌더링합니다.</p><p><span>·</span>매달 추가되는 잡지 데이터를 일관된 포맷으로 유지할 수 있으며, 수정 및 유지보수에 용이합니다.</p></div>},
+        keyFeatures: { label : "react-router-dom [useParams] · 데이터 바인딩", text: <div className="kF_text"><p><span>·</span>사용자가 특정 이미지를 클릭하면 해당 데이터와 연결된 정보를 실시간으로 불러와 화면에 렌더링합니다.</p><p><span>·</span>매달 추가되는 잡지 데이터를 일관된 포맷으로 유지할 수 있으며, 수정 및 유지보수에 용이합니다.</p></div>},
         github: {url: "https://github.com/317dlwldms/MCA", text: "317dlwldms/MCA"},
-        notion: {url: "https://obtainable-shallot-6b9.notion.site/MCA-2fda8ff395ee818eba63debda59fbe11", text: "[🍶 MCA]"},
+        notion: {url: "https://obtainable-shallot-6b9.notion.site/MCA-2fda8ff395ee818eba63debda59fbe11", text: "[🍶 MCA] - 프로젝트 노트"},
         figma:"",
         stack: [
             "React","HTML5","CSS3", "JavaScript","Figma","Photoshop"
@@ -66,7 +44,7 @@ export const projectList = [
         overview: "위치와 시간을 기반으로 상황에 맞는 음악을 추천하는 웹 프로젝트",
         keyFeatures: { label : "Geolocation API · Weather API · Spotify API", text: <div className="kF_text"><p><span>·</span>사용자의 위치에 따라 현재 날씨를 가져오고, 권한이 없는 경우에도 서비스가 동작하도록 예외 처리를 두어 구현하였습니다.</p><p><span>·</span>위치와 날씨를 반영하여 상황에 맞는 플레이리스트를 추천합니다.</p></div>},
         github: {url: "https://github.com/317dlwldms/tik-tok", text: "317dlwldms.tik-tok"},
-        notion: {url: "https://obtainable-shallot-6b9.notion.site/Tik-Tok-2fda8ff395ee81009823e55812a047bc", text: "[⏱️ tik-tok]"},
+        notion: {url: "https://obtainable-shallot-6b9.notion.site/Tik-Tok-2fda8ff395ee81009823e55812a047bc", text: "[⏱️ tik-tok] - 프로젝트 노트"},
         figma: "",
         stack: [
             "REST API","JavaScript","HTML5","CSS3","Figma","Photoshop", "Illustrator"
@@ -88,7 +66,7 @@ export const projectList = [
         overview: "아티스트 앨범을 소개하는 웹페이지",
         keyFeatures: { label : "Horizontal Scroll", text: <div className="kF_text"><p><span>·</span>jQuery의 mousewheel 이벤트를 제어하여 사용자가 스크롤 할 때 한 섹션씩 자연스럽게 전환되도록 구현하였습니다.</p></div>},
         github: {url: "https://github.com/317dlwldms/album",text: "317dlwldms/album"},
-        notion: {url: "https://obtainable-shallot-6b9.notion.site/Album-2fda8ff395ee814d9396c81d74386abc", text: "[🌱 album]"},
+        notion: {url: "https://obtainable-shallot-6b9.notion.site/Album-2fda8ff395ee814d9396c81d74386abc", text: "[🌱 album] - 프로젝트 노트"},
         figma: "",
         stack: [
             "HTML5","CSS3","j-Query","Photoshop", "Illustrator"
@@ -113,7 +91,7 @@ export const projectList = [
         figma: "",
         stack: "",
         nextSteps: "",// nextSteps: "데이터 베이스를 우회해서 활용하는 법을 배웠으니 데이터베이스에 대해 기본적인 것부터 배우기 시작해야겠다.",
-        url: "https://dlwldms.com/317dlwldms",
+        url: "",
         imgs: "",
         homeImg: homeImg2,
     },
