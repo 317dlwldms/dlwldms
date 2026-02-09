@@ -19,7 +19,7 @@
 <img src="https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/SCSS-cc6699?style=flat&logo=sass&logoColor=white" />
 - React 기반 SPA 구조
 - react-router-dom을 활용한 페이지 · 데이터 연결
-- SASS를 사용한 스타일링 css 작성
+- SASS를 사용한 스타일링 작성
 </details>
 
 <details>
