@@ -6,7 +6,7 @@
 
 
 <details>
-  <summary><h4>👤 Role</h4></summary>
+  <summary><h3>👤 Role</h3></summary>
 
   |기획|디자인|구현|
 |:-:|:-:|:-:|
@@ -14,7 +14,7 @@
 </details>
 
 <details>
-  <summary><h4>📚 Stack</h4></summary>
+  <summary><h3>📚 Stack</h3></summary>
 
 <img src="https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/SCSS-cc6699?style=flat&logo=sass&logoColor=white" />
 - React 기반 SPA 구조
@@ -23,7 +23,7 @@
 </details>
 
 <details>
-  <summary><h4>📁 Process</h4></summary>
+  <summary><h3>📁 Process</h3></summary>
 
   |Process|Description|
   |:-:|:-|
