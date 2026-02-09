@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# 👩🏻‍💻 dlwldms
+*2026 개인 포트폴리오*
+>지난 포트폴리오에서 반복되는 콘텐츠를 정리하고, 각 프로젝트를 진행하면서 느꼈던 **문제 · 해결 · 결과 · 개선할 것**을 기록하여 프로젝트를 마무리하는 것이 아닌 더 나은 개발로 이어지기 위한 발판으로 삼고자 했습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="1500" height="844" alt="image" src="https://github.com/user-attachments/assets/eac15726-9c62-4c14-a2db-0c36573eecb8" />
 
-## Available Scripts
 
-In the project directory, you can run:
+<details>
+  <summary><h4>👤 Role</h4></summary>
 
-### `npm start`
+  |기획|디자인|구현|
+|:-:|:-:|:-:|
+|이지은|이지은|[dlwldms](https://www.github.com/317dlwldms)|
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<details>
+  <summary><h4>📚 Stack</h4></summary>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/SCSS-cc6699?style=flat&logo=sass&logoColor=white" />
+- React 기반 SPA 구조
+- react-router-dom을 활용한 페이지 · 데이터 연결
+- SASS를 사용한 스타일링 css 작성
+</details>
 
-### `npm test`
+<details>
+  <summary><h4>📁 Process</h4></summary>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  |Process|Description|
+  |:-:|:-|
+  |문제|포트폴리오를 제작하면서 제일 중요한 부분은 어떻게 하면 작업물을 한눈에 보이게 할 수 있을지 였기 때문에 기능적인 문제보다 레이아웃 구성에 대한 고민이 컸다.|
+  |해결|작업물을 보여주는 섹션의 구성에 대해 많은 고민을 했다. 가로스크롤과 슬라이딩 박스를 시도해 본 후, 결국 심플 이즈 베스트라고 가장 한 눈에 볼 수 있는 보드형으로 구성하기로 함.|
+  |결과|콘텐츠가 한눈에 들어오는 구조로 정리되어 포트폴리오의 가독성이 개선되었다. 각 프로젝트의 특징과 사용 기술이 명확하게 전달하였고, 전체적인 완성도가 높아졌습니다.|
+</details>
